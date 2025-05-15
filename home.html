@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Conversor de Monedas</title>
+  <link rel="stylesheet" href="stylesHome.css">
+  <!-- Toastify CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
+
+</head>
+<body>
+  <div class="container">
+    <h1>Conversor de Monedas</h1>
+    <button id="logoutBtn" class="logout-btn">Cerrar Sesión</button>
+
+    <form id="convertForm">
+      <input type="number" id="amount" placeholder="Cantidad" required>
+
+      <div class="select-group">
+        <label for="fromCurrency">De:</label>
+        <select id="fromCurrency" required>
+          <option value="MXN">Peso Mexicano (MXN)</option>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="CAD">Dólar Canadiense (CAD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="JPY">Yen Japonés (JPY)</option>
+        </select>
+      </div>
+
+      <div class="select-group">
+        <label for="toCurrency">A:</label>
+        <select id="toCurrency" required>
+          <option value="USD">Dólar Americano (USD)</option>
+          <option value="MXN">Peso Mexicano (MXN)</option>
+          <option value="CAD">Dólar Canadiense (CAD)</option>
+          <option value="EUR">Euro (EUR)</option>
+          <option value="GBP">Libra Esterlina (GBP)</option>
+          <option value="JPY">Yen Japonés (JPY)</option>
+        </select>
+      </div>
+
+      <button type="submit">Convertir</button>
+    </form>
+
+    <div id="result" class="result-box"></div>
+  </div>
+
+  <script type="module" src="script.js"></script>
+  <!-- Toastify JS -->
+<script src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+</body>
+</html>
